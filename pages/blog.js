@@ -1,6 +1,6 @@
 import React from 'react';
 import mongoose from 'mongoose';
-import Blog from './models/Blog';
+import Blog from '../models/Blog';
 import { List } from 'antd';
 
 export default function blog({ posts }) {
