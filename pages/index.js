@@ -5,18 +5,23 @@ import { List } from 'antd';
 
 export default function blog({ posts }) {
   return (
-    <List
-      itemLayout="horizontal"
-      dataSource={posts}
-      renderItem={item => (
-        <List.Item>
-          <List.Item.Meta
-            title={item.title}
-            description={item.content}
-          />
-        </List.Item>
-      )}
-    />
+    <div>
+      <h1>
+        Blog Posts
+      </h1>
+      <List
+        itemLayout="horizontal"
+        dataSource={posts}
+        renderItem={item => (
+          <List.Item>
+            <List.Item.Meta
+              title={item.title}
+              description={item.content}
+            />
+          </List.Item>
+        )}
+      />
+    </div>
   )
 }
 
