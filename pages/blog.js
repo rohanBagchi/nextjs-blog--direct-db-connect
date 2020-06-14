@@ -21,7 +21,7 @@ export default function blog({ posts }) {
 }
 
 export async function getServerSideProps(context) {
-  mongoose.connect(`mongodb://${process.env.DB_USER}:${process.env.DB_PASSWORD}@ds061839.mlab.com:61839/nextjs-blog`, {
+  mongoose.connect(process.env.connection_string, {
     useNewUrlParser: true,
     useUnifiedTopology: true
   });
