@@ -7,7 +7,7 @@ export default function blog({ posts }) {
   return (
     <div>
       <h1>
-        Blog Posts
+        Blog Posts:
       </h1>
       <List
         itemLayout="horizontal"
